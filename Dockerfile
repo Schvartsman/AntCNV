@@ -1,5 +1,5 @@
-FROM ubuntu:22.04
+FROM mambaorg/micromamba:1.5.10
 
-RUN apt-get update && apt-get install -y samtools
+RUN micromamba install -y -n base -c conda-forge -c bioconda samtools=1.21 && micromamba clean --all --yes
 
 CMD ["samtools", "--version"]
