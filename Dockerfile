@@ -5,4 +5,4 @@ WORKDIR /workspace
 
 RUN micromamba install -y -n base -c conda-forge -c bioconda bwa && micromamba clean --all --yes
 
-CMD ["bwa", "--version"]
+CMD ["bwa", "mem"]
