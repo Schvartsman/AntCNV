@@ -1,0 +1,9 @@
+samples:
+  - M
+  - P
+
+fastq_dir: data/fastq
+reference: data/reference/hg19.fa
+illuminaclip: data/barcode
+minlen: 40
+output_dir: results
